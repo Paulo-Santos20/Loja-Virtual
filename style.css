@@ -523,7 +523,6 @@ header .right .imagem img{
 }
 
 #Contact .container .left{
-    box-shadow: 0 0 15px #848790;
     margin: 2%;
 }
 
@@ -625,7 +624,6 @@ header .right .imagem img{
 }
 
 #Contact .container .right{
-    box-shadow: 0 0 15px #848790;
     margin: 2%;
 }
 
@@ -691,8 +689,7 @@ footer .container p{
     
 }
 
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 768px){    
     .desktop-menu ul{
         display: none;
     }
@@ -746,7 +743,16 @@ footer .container p{
     #Contact .right img{
         margin-top:60px;
     }
-
+    .social{
+        margin-bottom: 20px;
+    }   
+    #Contact .container .right .box .icons{
+       margin-left:80px;
+        
+    }
+    #Contact .container .right .box .text p{
+        font-size: 13px;
+    }
     footer .container{
         justify-content: space-evenly;
         height: 150px;
@@ -903,11 +909,57 @@ footer .container p{
 }
 
 @media screen and (max-width: 428px){
-    
+    .call{
+        margin-top: 180px;
+    }   
+   
     header .right .imagem{
         width: 80%;
+        margin-bottom: 250px;
     }
-    .right .imagem img{
-        margin-left: 130px;
+    #Contact .container{
+        height: 400px;
+    } 
+    #Contact .container .left .box{
+        width: 90%;
+        height: 65vh;
+    }
+    #Contact .container .right .box{
+        margin-top: 60px;
+        width: 100%;
+        height: 45vh;
+    }
+    #Contact .container .right .box .icons{
+        width: 50px;
+    }
+    #Contact .container{
+        flex-direction: column;
+        height: 120vh;
+    }
+    #Contact .container .right .box .text p{
+        padding: 19px 0;
+        font-size:18px;
+        font-weight: 600;
+        color: #1B3B56;
+    }    
+    .footer-img{
+        width: 20%;
+        height: 20%;
+    }
+}
+
+@media screen and (max-width: 375px){   
+    .bg2{
+        margin: 0;
+    }
+    #Contact .container .right .box{
+        margin-top: 50px;
+        width: 100%;
+        height: 45vh;
+        font-size: 10px;
+    }
+    #Contact .container .right .box .icons{
+        width: 40px;
+        margin-left: 40px;
     }
 }
