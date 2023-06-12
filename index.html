@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ínicio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script async src="loja.js"></script>
+    <title>Loja Marta</title>
 </head>
+
 <body>
 
     <!--Aqui começa o Header-->
 
     <header class="max-width bg" id="Home">
-            <div class="container">
-                <nav class="menu">
-                    <div class="logo"></div>
-                    <div class="desktop-menu">
-                        <ul>
-                            <li><a href="#Home">Vesti</a></li>
-                            <li><a href="#About">Novidades</a></li>
-                            <li><a href="#Service">Destaque</a></li>
-                            <li><a href="#Contact">Contato</a></li>
-                        </ul>
+        <div class="container">
+            <nav class="menu">
+                <div class="logo"></div>
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="#Home">Marta's</a></li>
+                        <li><a href="#About">Novidades</a></li>
+                        <li><a href="#Service">Destaque</a></li>
+                        <li><a href="#Contact">Contato</a></li>
+                        <li></li><i class='bx bxs-shopping-bag' id="cart-icon"></i></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <ul id="myLinks">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">Novidades</a></li>
+                        <li><a href="#Service">Destaque</a></li>
+                        <li><a href="#Contact">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="call">
+                <div class="left">
+                    <h1 class="color-azul text-gd">Novas Coleções</h1>
+                    <p class="color-azul text-pq">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button class="add-cart">Adicionar ao carrinho</button>
+                </div>
+                <div class="right">
+                    <div class="imagem">
+                        <img src="image/r9.png" alt="">
                     </div>
 
-                    <div class="mobile-menu" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                        <ul id="myLinks">
-                            <li><a href="#Home">Home</a></li>
-                            <li><a href="#About">Novidades</a></li>
-                            <li><a href="#Service">Destaque</a></li>
-                            <li><a href="#Contact">Contato</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="call">
-                    <div class="left">
-                        <h1 class="color-azul text-gd">Novas Coleções</h1>
-                        <p class="color-azul text-pq">Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button>Compre Agora</button>
-                    </div>
-                    <div class="right">
-                        <div class="imagem">
-                            <img src="image/r9.png" alt="">
-                        </div>
-    
-                    </div>
                 </div>
             </div>
-            <button id="back-to-top">^</button>
+        </div>
+        <button id="back-to-top">^</button>
     </header>
 
     <!--Aqui Termina o Header-->
@@ -74,24 +81,27 @@
                     <div class="text">
                         <h2 class="color-branco">Conjunto</h2>
                         <p class="color-branco">Coleção de Inverno</p>
-                        <i class="fa fa-long-arrow-right"></i>
                     </div>
+                    <span class="price">R$ 85,00</span>
+                    <button class="add-cart">Adicionar ao carrinho</button>
                 </div>
                 <div class="box">
                     <img src="image/b2.png" alt="">
                     <div class="text">
                         <h2 class="color-branco">Conjunto</h2>
                         <p class="color-branco">Coleção de Inverno</p>
-                        <i class="fa fa-long-arrow-right"></i>
                     </div>
+                    <span class="price">R$ 95,00</span>
+                    <button class="add-cart">Adicionar ao carrinho</button>
                 </div>
                 <div class="box">
                     <img src="image/b3.png" alt="">
                     <div class="text">
                         <h2 class="color-branco">Conjunto</h2>
-                        <p class="color-branco">Coleção de Inverno</p>
-                        <i class="fa fa-long-arrow-right"></i>
+                        <p class="color-branco">Coleção de Inverno </p>
                     </div>
+                    <span class="price">R$ 125,00</span>
+                    <button class="add-cart">Adicionar ao carrinho</button>
                 </div>
             </div>
         </div>
@@ -110,25 +120,25 @@
                         <div class="text-titulo">Promoções</div>
                     </div>
                 </div>
-                    <input type="radio" name="slider" id="item-1" checked>
-                    <input type="radio" name="slider" id="item-2">
-                    <input type="radio" name="slider" id="item-3">
-                    <div class="cards">
-                        <label class="card" for="item-1" id="song-1">
-                            <img src="image/p1.jpg" alt="">
-                            <button>Comprar Agora</button>
-                        </label>
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="song-1">
+                        <img src="image/p1.jpg" alt="">
+                        <button class="add-cart">Adicionar ao carrinho</button>
+                    </label>
 
-                        <label class="card" for="item-2" id="song-2">
-                            <img src="image/p2.jpg">
-                            <button>Comprar Agora</button>
-                        </label>
+                    <label class="card" for="item-2" id="song-2">
+                        <img src="image/p2.jpg">
+                        <button class="add-cart">Adicionar ao carrinho</button>
+                    </label>
 
-                        <label class="card" for="item-3" id="song-3">
-                            <img src="image/p3.jpg">
-                            <button>Comprar Agora</button>
-                        </label>
-                    </div>
+                    <label class="card" for="item-3" id="song-3">
+                        <img src="image/p3.jpg">
+                        <button class="add-cart">Adicionar ao carrinho</button>
+                    </label>
+                </div>
             </div>
         </div>
     </section>
@@ -200,20 +210,21 @@
 
         // Menu-Mobile
 
-       function myFunction() {
+        function myFunction() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
                 x.style.display = "block";
             }
-}
+        }
         // Scrollbar Personalizado
 
-            var btn = document.querySelector("#back-to-top");
-            btn.addEventListener("click", function() {
-                window.scrollTo(0, 0);
-            });
+        var btn = document.querySelector("#back-to-top");
+        btn.addEventListener("click", function () {
+            window.scrollTo(0, 0);
+        });
     </script>
 </body>
+
 </html>
