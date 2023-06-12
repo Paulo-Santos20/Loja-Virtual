@@ -13,6 +13,8 @@
 
 html,body{
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .max-width{
@@ -906,9 +908,9 @@ footer .container p{
     #Contact .container .right .box .text p {
         font-size: 16px;
     }
-}
+    }
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 425px){
     .call{
         margin-top: 180px;
     }   
@@ -945,6 +947,13 @@ footer .container p{
     .footer-img{
         width: 20%;
         height: 20%;
+    }
+    .mobile-menu ul {
+      display: none;
+    }
+
+    .mobile-menu.open ul {
+      display: block;
     }
 }
 
