@@ -13,8 +13,6 @@
 
 html,body{
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .max-width{
@@ -506,6 +504,10 @@ header .right .imagem img{
     z-index: 1;
 }
 
+.card .price{
+    display: flex;
+    position: absolute;
+}
 /* #### Fim do Service #### */
 
 /* #### Contact #### */
@@ -639,13 +641,19 @@ header .right .imagem img{
 
 /* #### footer #### */
 
-footer .container{
+footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
-    min-height: 80px;
+    background: #C3BCB7;
+    margin-top: 80px;
+  }
+  
+footer .container{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: #C3BCB7;
+    min-height: 80px;
 }
 
 footer .container img{
@@ -683,7 +691,7 @@ footer .container p{
     
 }
 
-@media screen and (max-width: 740px){
+@media screen and (max-width: 768px){
 
     .desktop-menu ul{
         display: none;
@@ -703,10 +711,6 @@ footer .container p{
     
     header .right .imagem{
         width: 100%;
-    }
-
-    .titulo{
-        min-height: 150px;
     }
 
     .down{
@@ -737,7 +741,7 @@ footer .container p{
 
     .mobile-menu{
         display: block;
-    }
+    }  
 
     #Contact .right img{
         margin-top:60px;
@@ -745,7 +749,6 @@ footer .container p{
 
     footer .container{
         justify-content: space-evenly;
-        flex-direction: column;
         height: 150px;
     }
     footer .container p{
@@ -759,14 +762,16 @@ footer .container p{
     .left{
         width: 100%;
         min-height:auto;
-        padding: 0 2%;
+        padding: 0 1%;
     }
 
     .right{
         width: 100%;
         min-height: auto;
-        padding: 0 2%;
-        margin-top: -60px;
+        padding: 0 5%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     .logo{
@@ -901,5 +906,8 @@ footer .container p{
     
     header .right .imagem{
         width: 80%;
+    }
+    .right .imagem img{
+        margin-left: 130px;
     }
 }
